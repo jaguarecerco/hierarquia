@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CERCO</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+  <h1 id="titulo"><span id="texto-titulo"></span></h1>
+  <table id="tabela-hierarquia">
+    <thead>
+      <tr>
+        <th>Serial</th>
+        <th>CPF</th>
+        <th>Telefone</th>
+        <th>Nome</th>
+        <th>Graduação</th>
+        <th>Ingresso</th>
+        <th>Última Promoção</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+  <script>
+    const textoTitulo = "CORPO ESPECIAL DE REPRESSÃO AO CRIME ORGANIZADO";
+    const elementoTitulo = document.getElementById("texto-titulo");
+    let index = 0;
+
+    function digitarTitulo() {
+      if (index < textoTitulo.length) {
+        elementoTitulo.innerHTML += textoTitulo.charAt(index);
+        index++;
+        setTimeout(digitarTitulo, 100);
+      }
+    }
+
+    window.onload = () => {
+      digitarTitulo(); 
+      getSheetData(); 
+    };
+  </script>
+</body>
+</html>
