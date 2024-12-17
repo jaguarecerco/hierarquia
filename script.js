@@ -1,6 +1,6 @@
 const apiKey = "AIzaSyAvN4knlzUhNK967133dBMR1aGemDzd0mY";
 const sheetID = "18PytfYVvzmTGQZtgGJdA-cDk9eGtEmMfR_kNgZb4SiA";
-const range = "A2:G20";
+const range = "A2:G35";
 
 function getSheetData() {
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/${range}?key=${apiKey}`;
