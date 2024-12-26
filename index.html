@@ -9,40 +9,98 @@
 </head>
 <body>
   <h1 id="titulo"><span id="texto-titulo"></span></h1>
-  <table id="tabela-hierarquia">
+
+  <h2>DELEGADOS</h2>
+  <table id="tabela-delegados">
     <thead>
       <tr>
-        <th>Serial</th>
-        <th>CPF</th>
-        <th>Telefone</th>
         <th>Nome</th>
+        <th>RG</th>
+        <th>Serial</th>
+        <th>Telefone</th>
         <th>Graduação</th>
-        <th>Ingresso</th>
-        <th>Última Promoção</th>
+        <th>Status</th>
       </tr>
     </thead>
     <tbody>
     </tbody>
   </table>
 
+  <h2>ESCRIVÃO</h2>
+  <table id="tabela-escrivaes">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>RG</th>
+        <th>Serial</th>
+        <th>Telefone</th>
+        <th>Graduação</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <h2>INVESTIGAÇÃO</h2>
+  <table id="tabela-investigacao">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>RG</th>
+        <th>Serial</th>
+        <th>Telefone</th>
+        <th>Graduação</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <h2>INVESTIGAÇÃO 2</h2>
+  <table id="tabela-investigacao2">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>RG</th>
+        <th>Serial</th>
+        <th>Telefone</th>
+        <th>Graduação</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <h2>OPERACIONAL ALFA</h2>
+  <table id="tabela-operacional-alfa">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>RG</th>
+        <th>Serial</th>
+        <th>Telefone</th>
+        <th>Graduação</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <h2>OPERACIONAL BETA</h2>
+  <table id="tabela-operacional-beta">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>RG</th>
+        <th>Serial</th>
+        <th>Telefone</th>
+        <th>Graduação</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
   <script src="script.js"></script>
-  <script>
-    const textoTitulo = "CORPO ESPECIAL DE REPRESSÃO AO CRIME ORGANIZADO";
-    const elementoTitulo = document.getElementById("texto-titulo");
-    let index = 0;
-
-    function digitarTitulo() {
-      if (index < textoTitulo.length) {
-        elementoTitulo.innerHTML += textoTitulo.charAt(index);
-        index++;
-        setTimeout(digitarTitulo, 100);
-      }
-    }
-
-    window.onload = () => {
-      digitarTitulo(); 
-      getSheetData(); 
-    };
-  </script>
 </body>
 </html>
