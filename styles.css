@@ -1,45 +1,121 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #0b1120;
-    color: #fff;
+    background-color: #121212; /* Preto */
+    color: #f0f0f0; /* Branco */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #titulo {
     font-size: 2rem;
-    color: #ffd700;
-    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffcc00;
+    color: #ff4d4d; /* Vermelho */
+    text-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff1a1a; /* Tons de vermelho */
     margin-bottom: 20px;
     text-align: center;
-    overflow: hidden; 
-    white-space: nowrap; 
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: visible; /* Garante que o texto está visível */
 }
+
+h2 {
+    color: #ff4d4d; /* Vermelho */
+    text-shadow: 0 0 5px #ff4d4d;
+    margin: 30px 0 10px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
 table {
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     width: 90%;
     margin: 20px auto;
-    background-color: #1a2336;
+    background-color: #1e1e1e; /* Cinza escuro */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra à tabela */
 }
+
 th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #fff;
-    font-size: 14px;
-    white-space: nowrap;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #292929; /* Linha separadora */
+    font-size: 15px;
+    color: #f0f0f0; /* Branco */
 }
+
 thead th {
-    background-color: #26304a;
-    color: #ffd700;
+    background-color: #292929; /* Cinza médio */
+    color: #ff4d4d; /* Vermelho */
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    border-bottom: 2px solid #ff4d4d; /* Adiciona uma linha inferior ao cabeçalho */
+}
+
+tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 tbody tr:nth-child(even) {
-    background-color: #26304a;
+    background-color: #2d2d2d; /* Cinza um pouco mais claro */
 }
+
 tbody tr:hover {
-    background-color: #35405c;
-    transform: scale(1.02);
-    transition: 0.3s;
+    background-color: #3a3a3a; /* Cinza mais claro */
+    transform: scale(1.02); /* Destaca a linha */
+}
+
+tbody td:first-child,
+thead th:first-child {
+    border-radius: 10px 0 0 10px; /* Bordas arredondadas na primeira coluna */
+}
+
+tbody td:last-child,
+thead th:last-child {
+    border-radius: 0 10px 10px 0; /* Bordas arredondadas na última coluna */
+}
+
+caption {
+    caption-side: top;
+    text-align: center;
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #ff4d4d;
+}
+
+/* Ajustes das larguras das colunas */
+#tabela-delegados td:nth-child(1), #tabela-escrivaes td:nth-child(1), #tabela-investigacao td:nth-child(1), 
+#tabela-investigacao2 td:nth-child(1), #tabela-operacional-alfa td:nth-child(1), #tabela-operacional-beta td:nth-child(1) {
+    width: 180px; /* Nome maior */
+}
+
+#tabela-delegados td:nth-child(2), #tabela-escrivaes td:nth-child(2), #tabela-investigacao td:nth-child(2), 
+#tabela-investigacao2 td:nth-child(2), #tabela-operacional-alfa td:nth-child(2), #tabela-operacional-beta td:nth-child(2) {
+    width: 120px; /* RG */
+}
+
+#tabela-delegados td:nth-child(3), #tabela-escrivaes td:nth-child(3), #tabela-investigacao td:nth-child(3), 
+#tabela-investigacao2 td:nth-child(3), #tabela-operacional-alfa td:nth-child(3), #tabela-operacional-beta td:nth-child(3) {
+    width: 150px; /* Serial */
+}
+
+#tabela-delegados td:nth-child(4), #tabela-escrivaes td:nth-child(4), #tabela-investigacao td:nth-child(4), 
+#tabela-investigacao2 td:nth-child(4), #tabela-operacional-alfa td:nth-child(4), #tabela-operacional-beta td:nth-child(4) {
+    width: 120px; /* Telefone */
+}
+
+#tabela-delegados td:nth-child(5), #tabela-escrivaes td:nth-child(5), #tabela-investigacao td:nth-child(5), 
+#tabela-investigacao2 td:nth-child(5), #tabela-operacional-alfa td:nth-child(5), #tabela-operacional-beta td:nth-child(5) {
+    width: 220px; /* Graduação maior */
+}
+
+#tabela-delegados td:nth-child(6), #tabela-escrivaes td:nth-child(6), #tabela-investigacao td:nth-child(6), 
+#tabela-investigacao2 td:nth-child(6), #tabela-operacional-alfa td:nth-child(6), #tabela-operacional-beta td:nth-child(6) {
+    width: 120px; /* Status */
 }
