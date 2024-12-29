@@ -1,6 +1,6 @@
 const apiKey = "AIzaSyAvN4knlzUhNK967133dBMR1aGemDzd0mY";
 const sheetID = "18PytfYVvzmTGQZtgGJdA-cDk9eGtEmMfR_kNgZb4SiA";
-const range = "A2:G35";
+const range = "A2:G40";
 
 const textoTitulo = "CORPO ESPECIAL DE REPRESSÃO AO CRIME ORGANIZADO"; 
 const elementoTitulo = document.getElementById("texto-titulo");
@@ -65,11 +65,11 @@ function getSheetData() {
             tbodyInvestigacao2.appendChild(tr);
           }
           
-          else if (index >= 20 && index <= 27) {
+          else if (index >= 20 && index <= 28) {
             tbodyOperacionalAlfa.appendChild(tr);
           }
          
-          else if (index >= 27 && index <= 34) {
+          else if (index >= 27 && index <= 35) {
             tbodyOperacionalBeta.appendChild(tr);
           }
         });
