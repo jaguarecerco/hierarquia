@@ -3,12 +3,12 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebas
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD6mlVfTJiyTF2Ifvc5OOkXNTqnmhkB_cI",
-  authDomain: "hierarquiaapp.firebaseapp.com",
-  projectId: "hierarquiaapp",
-  storageBucket: "hierarquiaapp.appspot.com",
-  messagingSenderId: "842157837219",
-  appId: "1:842157837219:web:afc1266745b36c3a902816"
+  apiKey: "AIzaSyCKjtuhuUTCCqUU2zlHLK737qyyLzZ2wvA",
+  authDomain: "hierarquianewxd.firebaseapp.com",
+  projectId: "hierarquianewxd",
+  storageBucket: "hierarquianewxd.firebasestorage.app",
+  messagingSenderId: "141472883370",
+  appId: "1:141472883370:web:8d7a527c3ebd22db8026d3"
 };
 
 
