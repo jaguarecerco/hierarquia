@@ -1,6 +1,6 @@
 // JavaScript Atualizado
-const apiKey = "AIzaSyAvN4knlzUhNK967133dBMR1aGemDzd0mY";
-const sheetID = "18PytfYVvzmTGQZtgGJdA-cDk9eGtEmMfR_kNgZb4SiA";
+const apiKey = "AIzaSyDJncvzGpK9lFURvCeAqgJzYUhJcXG3aKQ";
+const sheetID = "18mGCwsjmw-rw8Or-CXGW6H6rzY7BVnmG2o5WL7xcD_0";
 const range = "A2:G60";
 
 const textoTitulo = "CORPO ESPECIAL DE REPRESSÃO AO CRIME ORGANIZADO";
