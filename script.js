@@ -49,7 +49,7 @@ function getSheetData() {
             tr.appendChild(td);
           });
 
-          if (tbodyDelegados.children.length < 3 && row[4]?.toUpperCase().includes("DELEGADO")) {
+          if (tbodyDelegados.children.length < 4 && row[4]?.toUpperCase().includes("DELEGADO")) {
             tbodyDelegados.appendChild(tr);
           } else if (!escrivaoAdicionado && row[4]?.toUpperCase().includes("ESCRIVÃO")) {
             tbodyEscrivaes.appendChild(tr);
